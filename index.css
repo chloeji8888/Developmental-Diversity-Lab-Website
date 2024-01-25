@@ -1,0 +1,141 @@
+ /* Add your CSS styling here */
+ body {
+     font-family: 'Roman', sans-serif;
+     ;
+ }
+ .main_title {
+     display: flex;
+     /* This turns .main_title into a flex container */
+     align-items: left;
+     /* This will vertically center the items in the container */
+     justify-content: left;
+     /* This will horizontally center the container's content */
+     padding-top: 40px;
+     padding-bottom: 20px;
+ }
+
+ .main_title h1 {
+    color: #005A9C;
+        flex-grow: 1;
+        /* Allows the title to take up the remaining space */
+        text-align: center;
+        margin: 0;
+        /* Removes margin to center the title correctly */
+ }
+
+ .main_title img {
+    position: absolute;
+    top: 20px;
+    width: 150px;
+    left: 100px;
+     /* Adjust this value to scale the size of the logo */
+    height: auto;
+     /* This will maintain the aspect ratio of the logo */
+     /* margin-right: 10px; is not necessary unless you want additional spacing on the right side of the logo */
+ }
+
+ .full-nav{
+    position: absolute;
+    /* Fixes the navbar at the current location on the page */
+    top: 100px;
+    /* Aligns the navbar to the top of the page */
+    left: 30px;
+    /* Aligns the navbar to the left of the page */
+    width: 60%;
+    /* Ensures the navbar spans the full width of the viewport */
+    /* background-color: #fff; */
+    /* Gives the navbar a background color so that content scrolls behind it */
+    z-index: 1000;
+    /* Ensures the navbar is above other page content */
+
+ }
+ .navbar {
+     display: flex;
+     justify-content: center;
+     list-style-type: none;
+     padding: 10px;
+ }
+
+ .navbar li {
+     margin: 0 40px;
+ }
+
+ .navbar a {
+     text-decoration: none;
+     color: black;
+ }
+
+ .logo {
+     text-align: center;
+ }
+
+ .content {
+     text-align: left;
+     margin: 0 auto;
+     padding: 5px;
+     max-width: 800px;
+     /* You can adjust this width as needed */
+     font-family: 'Arial', sans-serif;
+     line-height: 2.0;
+     /* Adjust line-height for better readability */
+     color: #333;
+     /* Adjust the font color as needed */
+     margin-bottom: 100px;
+ }
+
+ h1 {
+     color: #005A9C;
+     /* Assuming a blue color for the heading */
+     margin-bottom: 20px;
+    text-align: center;
+ }
+
+ p {
+     margin-bottom: 20px;
+     /* Space between paragraphs */
+ }
+
+ a {
+     color: #0066CC;
+     /* Adjust the link color as needed */
+     text-decoration: none;
+     /* Removes underline from links */
+ }
+
+ a:hover {
+     text-decoration: underline;
+     /* Adds underline on hover for links */
+ }
+
+ /* Additional styles for button-like links */
+ .button-link {
+     background-color: #068b0f;
+     /* Background color for the button */
+     color: white;
+     /* Text color for the button */
+     padding: 10px 20px;
+     /* Padding inside the button */
+     border-radius: 5px;
+     /* Rounded corners for the button */
+     display: inline-block;
+     /* Allows padding and margin to affect the link */
+     text-transform: uppercase;
+     /* Uppercase text for the button */
+ }
+ .button-container {
+     text-align: center;
+ }
+
+ .button-link:hover {
+     background-color: #44a84a;
+     /* Darker background on hover */
+ }
+
+ .content h2{
+    color: #068b0f;
+    text-align: center;
+ }
+ .content h3 {
+     color: #44a84a;
+     text-align: center;
+ }
