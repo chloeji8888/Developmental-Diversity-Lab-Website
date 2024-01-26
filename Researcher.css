@@ -83,77 +83,76 @@
      /* Optional: if you want rounded corners */
  }
 
- .logo {
-     text-align: center;
- }
+.team-section {
+    text-align: center;
+    padding-top: 30px;
+}
 
- .content {
-     text-align: left;
-     margin: 0 auto;
-     padding: 5px;
-     max-width: 800px;
-     /* You can adjust this width as needed */
+.team-section h1 {
     font-family: 'Times New Roman', Times, serif;
-     line-height: 2.0;
-     /* Adjust line-height for better readability */
-     color: #333;
-     /* Adjust the font color as needed */
-     margin-bottom: 100px;
- }
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-weight: normal;
+    color: #005A9C;
+}
 
- h1 {
-     color: #005A9C;
-     /* Assuming a blue color for the heading */
-     margin-bottom: 20px;
-    text-align: center;
- }
+.team-members {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    /* Adjust the gap as needed */
+    flex-wrap: wrap;
+    /* align-items: flex-start; */
+           
+}
 
- p {
-     margin-bottom: 20px;
-     /* Space between paragraphs */
- }
+.member {
+    width: 400px;
+    background-color: rgb(229, 240, 247);
+    border-radius: 1%;
+    flex-basis: calc(30% - 20px);
+    box-sizing: border-box;
 
- a {
-     color: #0066CC;
-     /* Adjust the link color as needed */
-     text-decoration: none;
-     /* Removes underline from links */
- }
+    /* Adjust the width as needed */
+}
 
- a:hover {
-     text-decoration: underline;
-     /* Adds underline on hover for links */
- }
+.member img {
+    width: 60%;
+    /* Make the image responsive */
+    height: auto;
+    /* Maintain aspect ratio */
+    border-radius: 1%;
+    /* Optional: if you want round images */
+}
 
- /* Additional styles for button-like links */
- .button-link {
-     background-color: #068b0f;
-     /* Background color for the button */
-     color: white;
-     /* Text color for the button */
-     padding: 10px 20px;
-     /* Padding inside the button */
-     border-radius: 5px;
-     /* Rounded corners for the button */
-     display: inline-block;
-     /* Allows padding and margin to affect the link */
-     text-transform: uppercase;
-     /* Uppercase text for the button */
- }
- .button-container {
-     text-align: center;
- }
+.member_content{
+    padding: 10px;
+    text-align: left;
+}
 
- .button-link:hover {
-     background-color: #44a84a;
-     /* Darker background on hover */
- }
+.member h2 {
+    font-size: 18px;
+    /* Adjust the size as needed */
+    color: #333;
+    /* Adjust the color as needed */
+    margin-top: 10px;
+    color: #005A9C;
+    /* Adjust the space as needed */
+}
 
- .content h2{
-    color: #068b0f;
-    text-align: center;
- }
- .content h3 {
-     color: #44a84a;
-     text-align: center;
- }
+.member h3 {
+    font-size: 16px;
+    /* Adjust the size as needed */
+    margin-top: 5px;
+    color: #177dc5;
+    /* Adjust the space as needed */
+}
+
+.member p {
+    text-align: left;
+    font-size: 14px;
+    /* Adjust the size as needed */
+    margin-top: 5px;
+    color: #005A9C;
+    /* Adjust the space as needed */
+}
