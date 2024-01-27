@@ -83,116 +83,64 @@
      /* Optional: if you want rounded corners */
  }
 
-.team-section {
+.header {
     text-align: center;
-    padding-top: 30px;
-}
-
-.team-section h1 {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 40px;
-    letter-spacing: 2px;
-    font-weight: normal;
+    font-size: 20px;
     color: #005A9C;
+    font-weight: bold;
+    padding: 20px;
+    background: rgb(229, 240, 247);
 }
 
-.team-members {
+
+.main-content {
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    /* Adjust the gap as needed */
-    flex-wrap: wrap;
     /* align-items: flex-start; */
-           
+    margin: 60px;
 }
 
-.member {
-    width: 400px;
-    background-color: rgb(229, 240, 247);
-    border-radius: 1%;
-    flex-basis: calc(30% - 20px);
-    box-sizing: border-box;
-
-    /* Adjust the width as needed */
+.left-content {
+    width: 50%;
+    /* flex: 2; */
+    padding-left: 80px;
+    /* padding-right: 20px; */
+    /* Add more styling for the left content area */
 }
 
-.member img {
-    width: 60%;
-    /* Make the image responsive */
+.left-content p{
+    /* width: 50%; */
+    font-size: 20px;
+    line-height: 40px;
+
+}
+
+.right-content {
+    width: 50%;
+    padding-left: 90px;
+    /* flex: 1; */
+    /* Add more styling for the right content area */
+}
+
+.right-content img {
+    width: 80%;
+    /* This will make the image take the full width of the right-content div */
     height: auto;
-    /* Maintain aspect ratio */
-    border-radius: 1%;
-    /* Optional: if you want round images */
+    /* This will keep the image's aspect ratio intact */
 }
 
-.member_content{
-    padding: 10px;
-    text-align: left;
+.past_projects{
+    margin-left: 60px;
+    padding-left:80px;
+    margin-right: 60px;
 }
 
-.member h2 {
-    font-size: 18px;
-    /* Adjust the size as needed */
-    color: #333;
-    /* Adjust the color as needed */
-    margin-top: 10px;
-    color: #005A9C;
-    /* Adjust the space as needed */
-}
-
-.member h3 {
-    font-size: 16px;
-    /* Adjust the size as needed */
-    margin-top: 5px;
+.past_projects h2{
     color: #177dc5;
-    /* Adjust the space as needed */
+    font-size: 30px;
 }
 
-.member p {
-    text-align: left;
-    font-size: 14px;
-    /* Adjust the size as needed */
-    margin-top: 5px;
-    color: #005A9C;
-    /* Adjust the space as needed */
-}
-
-.get_Involved{
-    text-align: center;
-    padding-top: 30px;
-    padding-bottom: 100px;
-}
-
-.get_Involved h1{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 40px;
-    letter-spacing: 2px;
-    font-weight: normal;
-    color: #005A9C;
-}
-
-
-
- .button-link {
-     background-color: hsl(206, 96%, 31%);
-     /* Background color for the button */
-     color: white;
-     /* Text color for the button */
-     padding: 10px 20px;
-     /* Padding inside the button */
-     border-radius: 5px;
-     /* Rounded corners for the button */
-     display: inline-block;
-     /* Allows padding and margin to affect the link */
-     text-transform: uppercase;
-     /* Uppercase text for the button */
- }
-
-.button-container {
-    text-align: center;
-}
-
-.button-link:hover {
-    background-color: hsl(206, 96%, 38%);
-    /* Darker background on hover */
+.past_projects p {
+    color: #1b87d4;
+    font-size: 20px;
+    line-height: 30px;
 }
