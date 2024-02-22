@@ -1,0 +1,164 @@
+ /* Add your CSS styling here */
+ body {
+     font-family: 'Times New Roman', Times, serif;
+     ;
+ }
+
+ .main_title {
+     display: flex;
+     /* This turns .main_title into a flex container */
+     align-items: left;
+     /* This will vertically center the items in the container */
+     justify-content: left;
+     /* This will horizontally center the container's content */
+     padding-top: 60px;
+     padding-bottom: 20px;
+ }
+
+ .text_container {
+     display: flex;
+     flex-direction: column;
+     /* Stacks children vertically */
+     justify-content: center;
+     /* Center the text vertically */
+     padding-left: 350px;
+     /* Optional: Adds some space between the image and the text */
+ }
+
+ .main_title h1 {
+     color: #005A9C;
+     flex-grow: 1;
+     /* Allows the title to take up the remaining space */
+     text-align: center;
+     margin: 0;
+     /* Removes margin to center the title correctly */
+ }
+
+ .main_title h3 {
+     color: #7dafd3;
+     flex-grow: 1;
+     /* Allows the title to take up the remaining space */
+     text-align: center;
+     margin: 1;
+     /* Removes margin to center the title correctly */
+ }
+
+ .main_title img {
+     position: absolute;
+     top: 60px;
+     width: 100px;
+     left: 200px;
+     /* Adjust this value to scale the size of the logo */
+     height: auto;
+     /* This will maintain the aspect ratio of the logo */
+     /* margin-right: 10px; is not necessary unless you want additional spacing on the right side of the logo */
+ }
+
+ .full-nav {
+     position: absolute;
+     /* Fixes the navbar at the current location on the page */
+     top: 100px;
+     /* Aligns the navbar to the top of the page */
+     left: 30px;
+     /* Aligns the navbar to the left of the page */
+     width: 60%;
+     /* Ensures the navbar spans the full width of the viewport */
+     /* background-color: #fff; */
+     /* Gives the navbar a background color so that content scrolls behind it */
+     z-index: 1000;
+     /* Ensures the navbar is above other page content */
+
+ }
+
+ .navbar {
+     display: flex;
+     justify-content: center;
+     list-style-type: none;
+     padding: 30px;
+ }
+
+ .navbar li {
+     margin: 0 50px;
+ }
+
+ .navbar a {
+     text-decoration: none;
+     color: #177dc5;
+     font-size: 20px;
+     padding: 5px;
+     /* Add padding to create space around the text */
+     transition: background-color 0.3s, box-shadow 0.3s;
+     padding: 10px 15px;
+     box-sizing: border-box;
+     /* Smooth transition for hover effect */
+ }
+
+ .navbar a:hover {
+     background-color: rgb(229, 240, 247);
+     /* Light grey background on hover, change as needed */
+     /* box-shadow: 0 0 5px rgba(86, 185, 250, 0.2); */
+     /* Optional: adds a subtle shadow effect */
+     border-radius: 5px;
+     /* Optional: if you want rounded corners */
+ }
+
+ .header {
+     text-align: left;
+     font-size: 15px;
+     color: #005A9C;
+     font-weight: bold;
+     /* padding: 20px; */
+     margin-left: 100px;
+     margin-top: 60px;
+ }
+
+
+ .main-content {
+     /* display: flex; */
+     /* align-items: flex-start; */
+     margin-left: 80px;
+    margin-bottom: 80px;
+ }
+
+
+ .content-container {
+     background-color: transparent;
+     transition: background-color 0.3s ease, padding 0.3s ease;
+     padding: 5px;
+     margin: 10px;
+     /* Adjust padding as needed */
+     box-sizing: border-box;
+     border-radius: 10px;
+     /* Ensures padding is included in the width/height calculations */
+ }
+
+ .title {
+     cursor: pointer;
+     margin: 0;
+     padding: 3px;
+     color: #1a8ee6;
+     /* Adjust padding as needed */
+ }
+
+ .content-container:hover,
+ .content-container.active {
+     background-color: rgb(229, 240, 247);
+     /* Change this color to whatever you prefer */
+ }
+
+ .content {
+     display: none;
+     padding: 10px;
+     /* Adjust padding as needed */
+     margin-top: 0;
+     color: #1f7ec2;
+     line-height: 40px;
+
+ }
+
+
+ /* .past_projects p {
+    color: #1b87d4;
+    font-size: 20px;
+    line-height: 30px;
+}  */
